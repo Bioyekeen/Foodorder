@@ -1,0 +1,84 @@
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .catHeader {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .littleAbout{
+    border: 2px solid var(--lightgray);
+  }
+  
+  .littleAbout img{
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+  }
+  
+  .recentProducts{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .recentProducts{
+       flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+  .ourService .content{
+    padding: 0 10rem
+  }
+  .ourService .info{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: 10px;
+  }
+  .ourService .info div{
+    padding: 2rem 1rem;
+  }
+  .ourService .info div .MuiSvgIcon-root{
+    color: green;
+  }
+
+  @media (max-width:768px) {
+    .ourService .content{
+        padding: 0 2rem;
+      }
+      .ourService .info{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: 10px;
+      }
+  }
+  @media (max-width:576px) {
+      .ourService .info{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-column-gap: 10px;
+      }
+  }
+.recent .subscribe{
+  display: flex;
+  justify-content: center;
+  margin: 0 3rem;
+  width: 75%;
+}
+  .recent input{
+    padding: 1rem;
+     margin-bottom: 2rem;
+      width: 100%;
+    
+    border-width: 1px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+  }
